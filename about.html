@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Aaruchudar Consultancy</title>
+  <link rel="stylesheet" href="about.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header class="header" data-aos="fade-down">
+    <div class="logo-section">
+      <img src="/images/Screenshot 2025-05-30 135118.png" alt="Logo" class="logo" />
+      <h1 class="logo-main-title">Aaruchudar Consultancy</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="#" onclick="goToCourses()">Courses</a>
+      <a href="contact.html">Contact</a>
+      <div class="profile-dropdown" id="profile-button">
+        <img id="profileImageBtn" class="profile-icon" src="images/default-avatar.png" alt="Profile" />
+        <div class="profile-menu" id="profile-menu">
+          <p id="profile-username">👤 User</p>
+          <a href="view-profile.html">View Profile</a>
+          <a href="#" onclick="logout()">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="features-section">
+    <div class="feature-card" data-aos="fade-up">
+      <div class="feature-text">
+        <h2>About</h2>
+        <p>
+          Aaruchudar Consultancy is India’s first Human Intelligence-based consulting firm...
+        </p>
+      </div>
+    </div>
+    <div class="feature-card" data-aos="fade-up">
+      <div class="feature-text">
+        <h2>How We Are Different</h2>
+        <ul>
+          <li>Human First: We don’t just look at data...</li>
+          <li>Context-Crafted: Every project is shaped...</li>
+          <li>Wisdom-Led: We trust lived experience...</li>
+          <li>Systems-Aware: We consider the ripple effects...</li>
+          <li>Authentic Execution: No jargon. No pretense...</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Aaruchudar Consultancy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function goToCourses() {
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+      if (!currentUser) {
+        alert("Please login first");
+        window.location.href = "signin.html";
+      } else {
+        window.location.href = "index.html";
+      }
+    }
+
+    function logout() {
+      localStorage.removeItem("currentUser");
+      window.location.href = "signin.html";
+    }
+  </script>
+
+  <script src="profile-dropdown.js"></script>
+</body>
+</html>

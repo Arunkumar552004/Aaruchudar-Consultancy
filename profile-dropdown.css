@@ -1,0 +1,50 @@
+.profile-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .profile-btn {
+    background-color: #007bff;
+    font-size: 18px;
+    border-radius: 20px;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profile-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin-right: 8px;
+  }
+  
+  .profile-menu {
+    display: none;
+    position: absolute;
+    background: #333333f5;
+    padding: 10px;
+    border-radius: 6px;
+    top: 100%;
+    right: 10px;
+    width: 300px;
+    z-index: 1000;
+  }
+  
+  .profile-menu.show {
+    display: block;
+  }
+  
+  .profile-menu a,
+  .profile-menu p {
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  

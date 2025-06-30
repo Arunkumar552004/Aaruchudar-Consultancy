@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo-title">
+      <h1>Aaruchudar Consultancy</h1>
+      <h2>India's 1st Human Intelligence firm</h2>
+    </div>
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="form-box">
+        <h2>Edit Profile</h2>
+
+        <img id="profileImage" src="" alt="Profile Image" class="profile-image" />
+
+        <div class="input-row">
+          <div class="input-group">
+            <input type="text" id="username" placeholder="Username" />
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Email" disabled />
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <input type="text" id="phone" placeholder="Phone Number" />
+          </div>
+          <div class="input-group">
+            <select id="role" onchange="toggleFieldByRole()">
+              <option value="">Select Role</option>
+              <option value="Student">Student</option>
+              <option value="Professional">Professional</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-group" id="collegeGroup" style="display: none;">
+          <input type="text" id="college" placeholder="College Name" />
+        </div>
+
+        <div class="input-group" id="companyGroup" style="display: none;">
+          <input type="text" id="company" placeholder="Company Name" />
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <select id="gender">
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <input type="date" id="dob" />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <textarea id="address" rows="3" placeholder="Address"></textarea>
+        </div>
+
+        <button onclick="updateProfile()">Save Changes</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Aaruchudar Consultancy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    function toggleFieldByRole() {
+      const role = document.getElementById("role").value;
+      document.getElementById("collegeGroup").style.display = role === "Student" ? "block" : "none";
+      document.getElementById("companyGroup").style.display = role === "Professional" ? "block" : "none";
+    }
+
+    window.onload = () => {
+      if (currentUser) {
+        document.getElementById("username").value = currentUser.username || "";
+        document.getElementById("email").value = currentUser.email || "";
+        document.getElementById("phone").value = currentUser.phone || "";
+        document.getElementById("role").value = currentUser.role || "";
+        document.getElementById("college").value = currentUser.college || "";
+        document.getElementById("company").value = currentUser.company || "";
+        document.getElementById("gender").value = currentUser.gender || "";
+        document.getElementById("dob").value = currentUser.dob || "";
+        document.getElementById("address").value = currentUser.address || "";
+        if (currentUser.profileImage) {
+          document.getElementById("profileImage").src = currentUser.profileImage;
+        }
+        toggleFieldByRole();
+      }
+    };
+
+    function updateProfile() {
+      const updatedUser = {
+        ...currentUser,
+        username: document.getElementById("username").value,
+        phone: document.getElementById("phone").value,
+        role: document.getElementById("role").value,
+        college: document.getElementById("college").value,
+        company: document.getElementById("company").value,
+        gender: document.getElementById("gender").value,
+        dob: document.getElementById("dob").value,
+        address: document.getElementById("address").value
+      };
+
+      localStorage.setItem("currentUser", JSON.stringify(updatedUser));
+
+      const users = JSON.parse(localStorage.getItem("users")) || [];
+      const index = users.findIndex(u => u.email === currentUser.email);
+      if (index !== -1) {
+        users[index] = updatedUser;
+        localStorage.setItem("users", JSON.stringify(users));
+      }
+
+      alert("Profile updated successfully!");
+    }
+
+    function logout() {
+      localStorage.removeItem("currentUser");
+      window.location.href = "signin.html";
+    }
+  </script>
+</body>
+</html>
