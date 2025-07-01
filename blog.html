@@ -24,15 +24,6 @@
       localStorage.removeItem("currentUser");
       window.location.href = "signin.html";
     }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const user = JSON.parse(localStorage.getItem("currentUser"));
-      if (!user) {
-        window.location.href = "signin.html";
-      } else {
-        document.getElementById("profile-username").textContent ="👤 " + user.username;
-      }
-    });
   </script>
 
   <body>
@@ -206,7 +197,7 @@
             human intelligence. Real results.
           </p><br>
 
-          <h1 class="quote-highlight">"WHERE MINDS MEET, MAGIC HAPPENS."</h1>
+          <h2 class="quote-highlight">"WHERE MINDS MEET, MAGIC HAPPENS."</h2>
 
          </div>
           
@@ -383,35 +374,10 @@
         duration: 1200,
         once: true,
       });
-
-      const profileButton = document.getElementById("profile-button");
-      const profileMenu = document.getElementById("profile-menu");
-
-      profileButton.addEventListener("click", () => {
-        profileMenu.classList.toggle("show");
-      });
-
-      window.addEventListener("click", (e) => {
-        if (
-          !profileButton.contains(e.target) &&
-          !profileMenu.contains(e.target)
-        ) {
-          profileMenu.classList.remove("show");
-        }
-      });
-    </script>
+      </script>
 
     <script src="Script.js"></script>
     <script src="auth.js"></script>
-    <script>
-      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-if (!currentUser) {
-  alert("Please login first");
-  window.location.href = "signin.html";
-}
-
-    </script>
-
 <script src="profile-dropdown.js"></script>
   </body>
 </html>

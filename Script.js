@@ -10,27 +10,27 @@ const courses = [
         desc: "Overview of human cognitive capabilities and ways to enhance them.",
       },
       {
-        name: "Self Awareness & Mindset",
+        name: "Think Without Searching",
         desc: "Developing self-awareness and adopting a growth-oriented mindset.",
       },
       {
-        name: "Communication Skills",
+        name: "Attention is Power",
         desc: "Building effective communication for personal and professional success.",
       },
       {
-        name: "Emotional Intelligence",
+        name: "Intuition and Gut Thinking",
         desc: "Managing emotions and understanding emotional responses in others.",
       },
       {
-        name: "Leadership Essentials",
+        name: "Creativity Unplugged",
         desc: "Core leadership principles for influencing and guiding others.",
       },
       {
-        name: "Critical Thinking",
+        name: "Emotional & Mental Clarity",
         desc: "Enhancing problem-solving through logical and analytical thinking.",
       },
       {
-        name: "Goal Setting & Growth",
+        name: "Build Your Human Intelligence Routine",
         desc: "Establishing personal goals and tracking progress towards self-growth.",
       },
     ],
@@ -42,31 +42,31 @@ const courses = [
       "A short reset program to bring clarity, confidence, and communication improvement in 7 days.",
     modules: [
       {
-        name: "Mind Reset Techniques",
+        name: "Self-Awareness & Values",
         desc: "Strategies to clear mental clutter and refocus on priorities.",
       },
       {
-        name: "Daily Confidence Building",
+        name: "Purpose Discovery",
         desc: "Simple exercises to boost self-confidence each day.",
       },
       {
-        name: "Effective Communication Practice",
+        name: "Emotional Intelligence at Work",
         desc: "Practical sessions to refine your speaking and listening skills.",
       },
       {
-        name: "Clarity Exercises",
+        name: "Communication Mastery",
         desc: "Activities to gain clear understanding of goals and purpose.",
       },
       {
-        name: "Emotional Balancing",
+        name: "Personal Branding & Presence",
         desc: "Maintaining emotional stability under stress or pressure.",
       },
       {
-        name: "Confidence Assessment",
+        name: "Decision Making & Clarity",
         desc: "Evaluate your confidence levels and track improvements.",
       },
       {
-        name: "Wrap Up & Progress Evaluation",
+        name: "Action Blueprint & Reflection",
         desc: "Review of progress and future action planning.",
       },
     ],
@@ -78,32 +78,20 @@ const courses = [
       "This 30-day course builds strong purpose-driven professional skills.",
     modules: [
       {
-        name: "Personal Vision Development",
+        name: "Identify & Career Clarity",
         desc: "Crafting a clear personal and professional life vision.",
       },
       {
-        name: "Building Professional Values",
+        name: "Values-Driven Communication & Soft Skills",
         desc: "Defining and living by core ethical and professional values.",
       },
       {
-        name: "Time Management Skills",
+        name: "Time Management SkillsLinkedIn, Resume, Interviews (Personal Brand)",
         desc: "Optimizing time for maximum productivity and balance.",
       },
       {
-        name: "Decision Making Framework",
+        name: "Future Visioning & Goal Mapping",
         desc: "Structured approach to make sound professional decisions.",
-      },
-      {
-        name: "Communication for Leaders",
-        desc: "Advanced communication techniques for leadership roles.",
-      },
-      {
-        name: "Stress Management Techniques",
-        desc: "Strategies to cope with and reduce work-related stress.",
-      },
-      {
-        name: "Project Leadership Training",
-        desc: "Hands-on training for managing teams and projects effectively.",
       },
     ],
   },
@@ -114,135 +102,115 @@ const courses = [
       "Align your career to match your personal strengths and passion over 45 days.",
     modules: [
       {
-        name: "Career Self-Assessment",
-        desc: "Identify your current career status, skills, and areas for improvement.",
-      },
-      {
-        name: "Passion Mapping",
+        name: "Who Am I Now? - Self-reflection & Identity",
         desc: "Discover activities and career paths that excite you.",
       },
       {
-        name: "Strength Analysis",
+        name: "Values, Energy & Strengths Mapping",
         desc: "Analyze personal strengths to align with professional roles.",
       },
       {
-        name: "Skill Alignment",
+        name: "Skill Inventory & Passion Crossover",
         desc: "Map current skills with market demands and future trends.",
       },
       {
-        name: "Career Transition Planning",
+        name: "Future Roles & the “Redesign” Canvas",
         desc: "Create a step-by-step plan for career shifts or growth.",
       },
       {
-        name: "Interview Preparation",
+        name: "Storytelling & Personal Narrative Building",
         desc: "Master interview techniques and present your best self.",
       },
       {
-        name: "Long-Term Growth Strategy",
+        name: "Job Strategy / Entrepreneurial Strategy",
         desc: "Develop a roadmap for sustainable career advancement.",
       },
     ],
   },
 
   {
-    name: "Leadership from Within: 21-Day Intensive",
+    name: "Leadership from Within: 21-Day Intensive  for Founders & Changemakers",
     description:
       "An intensive 21-day leadership development program from within.",
     modules: [
       {
-        name: "Inner Leadership Activation",
+        name: "Authentic Leadership & Emotional Intelligence",
         desc: "Awaken your intrinsic leadership potential and confidence.",
       },
       {
-        name: "Core Value Identification",
+        name: "Conscious Culture Building",
         desc: "Identify and build leadership anchored on personal values.",
       },
       {
-        name: "Vision Mapping",
+        name: "Founder Fatigue & Energy Leadership",
         desc: "Create a powerful leadership vision for long-term impact.",
       },
       {
-        name: "Authentic Communication",
+        name: "Vision Alignment & Systems Thinking",
         desc: "Lead with honesty and transparency in all interactions.",
       },
       {
-        name: "Conflict Resolution",
+        name: "People Strategy (Hiring & Harmony)",
         desc: "Manage and resolve conflicts constructively.",
       },
       {
-        name: "Emotional Control",
+        name: "Business Values & Ethical Scaling",
         desc: "Stay calm and rational during challenging leadership situations.",
-      },
-      {
-        name: "Mentoring Others",
-        desc: "Develop the skills to guide and mentor team members.",
       },
     ],
   },
 
   {
-    name: "The Aaruchudar Educator Program",
+    name: "The Aaruchudar Educator Program (30 Days or Custom)",
     description:
       "Program focused for educators to enhance their teaching & mentoring approach.",
     modules: [
       {
-        name: "Modern Teaching Methods",
+        name: "Designing Human-Centered Classrooms",
         desc: "Learn innovative and technology-driven teaching approaches.",
       },
       {
-        name: "Student Engagement Strategies",
+        name: "Inclusive Teaching Practice",
         desc: "Techniques to keep students engaged and motivated.",
       },
       {
-        name: "Mentorship Models",
+        name: "Feedback Culture & Mentoring Students",
         desc: "Build effective mentor-mentee relationships with students.",
       },
       {
-        name: "Emotional Intelligence in Education",
+        name: "Future of Education & Institutional Mindsets",
         desc: "Support students emotionally while maintaining professionalism.",
       },
       {
-        name: "Gamified Learning",
+        name: "Innovation & Critical Thinking in Class",
         desc: "Implement game elements to make learning interactive and fun.",
-      },
-      {
-        name: "Classroom Management",
-        desc: "Establish a productive, respectful, and safe classroom environment.",
-      },
-      {
-        name: "Continuous Learning",
-        desc: "Encourage lifelong learning habits for both educators and students.",
       },
     ],
   },
 
   {
-    name: "Institutional Innovation Catalyst",
+    name: "Institutional  Innovation Catalyst (45 Days)",
     description:
       "Program for institutions to innovate and improve educational delivery.",
     modules: [
       {
-        name: "Institutional Audit",
-        desc: "Assess current systems, strengths, and areas for innovation.",
-      },
-      {
-        name: "Innovation Frameworks",
+        name: "Innovation Mindset & Problem Framing",
         desc: "Apply proven frameworks to foster institutional innovation.",
       },
       {
-        name: "Leadership Workshops",
+        name: "Ideation Labs & Design Thinking",
         desc: "Train leaders to champion change within the institution.",
       },
       {
-        name: "Collaborative Research",
+        name: "Student Startup Journey Design",
         desc: "Promote research partnerships to drive knowledge sharing.",
       },
       {
-        name: "Curriculum Redesign",
+        name: "Hackathon Planning & Execution",
         desc: "Develop modern, flexible, and outcome-driven curricula.",
       },
       {
-        name: "Faculty Empowerment",
+        name: "Partnering with Ecosystems (Govt, Incubators)",
         desc: "Support faculty in adopting innovative teaching methods.",
       },
       {
@@ -253,7 +221,7 @@ const courses = [
   },
 
   {
-    name: "Custom Sprint Labs / Retreats",
+    name: "Custom Sprint Labs / Retreats(2–5Days)",
     description:
       "Customized short sprint labs for organizations or personal retreats.",
     modules: [
@@ -266,23 +234,23 @@ const courses = [
         desc: "Facilitate team-building exercises to improve collaboration.",
       },
       {
-        name: "Mind Mapping",
+        name: "Human Intelligence at Work",
         desc: "Visually organize ideas and action plans during the sprint.",
       },
       {
-        name: "Goal Focus Sprints",
+        name: "Clarity Camp for Entrepreneurs",
         desc: "Short bursts of intense focus to achieve specific goals.",
       },
       {
-        name: "Productivity Hacks",
+        name: "Reflective Leadership for Educators",
         desc: "Apply techniques to boost productivity during and after sprints.",
       },
       {
-        name: "Problem Solving Retreat",
+        name: "Vision Labs for Institutions",
         desc: "Create a safe space to address key organizational challenges.",
       },
       {
-        name: "Outcome Reflection",
+        name: "Founders & Burnout (Well-being)",
         desc: "Evaluate sprint outcomes and plan next steps.",
       },
     ],

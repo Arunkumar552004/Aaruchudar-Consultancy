@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="home.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="contact.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script>
-
-function goToCourses() {
+      function goToCourses() {
         const currentUser = JSON.parse(localStorage.getItem("currentUser"));
         if (!currentUser) {
           alert("Please login first");
@@ -22,6 +19,7 @@ function goToCourses() {
           window.location.href = "index.html";
         }
       }
+
       function logout() {
         localStorage.removeItem("currentUser");
         window.location.href = "signin.html";
@@ -31,11 +29,7 @@ function goToCourses() {
   <body>
     <header class="header">
       <div class="logo-section">
-        <img
-          src="/images/Screenshot 2025-05-30 135118.png"
-          alt="Logo"
-          class="logo"
-        />
+        <img src="/images/Screenshot 2025-05-30 135118.png" alt="Logo" class="logo" />
         <h1 class="logo-main-title">Aaruchudar Consultancy</h1>
       </div>
       <nav class="nav-links">
@@ -54,25 +48,14 @@ function goToCourses() {
     </header>
 
     <div class="contact-container">
-      <div class="contact-card">
-        <div class="left-panel">
-          <h1>Contact us</h1>
-          
-         
-          
-          <div class="social-icons">
-            <a
-              href="instagram://user?username=YOUR_INSTAGRAM"
-              onclick="window.location='https://www.instagram.com/YOUR_INSTAGRAM';"
-              target="_blank"
-            >
+      <div class="contact-card" data-aos="zoom-in">
+        <div class="left-panel" data-aos="fade-right">
+          <h1 data-aos="fade-down">Contact us</h1>
+          <div class="social-icons" data-aos="zoom-in-up">
+            <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank">
               <img src="images/instagram-logo.jpeg" alt="Instagram" />
             </a>
-            <a
-              href="youtube://www.youtube.com/channel/YOUR_CHANNEL"
-              onclick="window.location='https://www.youtube.com/channel/YOUR_CHANNEL';"
-              target="_blank"
-            >
+            <a href="https://www.youtube.com/channel/YOUR_CHANNEL" target="_blank">
               <img src="images/youtube-logo.jpeg" alt="YouTube" />
             </a>
             <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">
@@ -84,13 +67,13 @@ function goToCourses() {
           </div>
         </div>
 
-        <div class="right-panel">
+        <div class="right-panel" data-aos="fade-left">
           <p class="address">424, Vallalar Street, Cheyyar</p>
           <p class="label">PHONE</p>
           <p class="info">+91 8489715208, 9840621910, 9865053286</p>
           <p class="label">EMAIL</p>
           <p class="info">ash@aaruchudar.com</p>
-          <div class="map">
+          <div class="map" data-aos="zoom-in-up">
             <iframe
               src="https://www.google.com/maps?q=424,+Vallalar+Street,+Cheyyar&output=embed"
               width="100%"
@@ -109,5 +92,7 @@ function goToCourses() {
     </footer>
 
     <script src="profile-dropdown.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1200, once: true, offset: 100 });</script>
   </body>
 </html>
