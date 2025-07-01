@@ -1,27 +1,28 @@
 const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+require("dotenv").config(); // Load .env variables
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const users = []; // replace with DB in production
+const users = []; // In-memory storage (temporary)
 
-// 📩 Email configuration
+// 📩 Email configuration using .env
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "your_email@gmail.com", // 👉 your Gmail
-    pass: "your_app_password", // ⚠️ Use App Password, not Gmail password
+    user: process.env.EMAIL_USER, // From .env
+    pass: process.env.EMAIL_PASS, // From .env
   },
 });
 
-// ✨ Send email
+// ✨ Send email function
 function sendSignupEmail(user) {
   const mailOptions = {
-    from: "your_email@gmail.com",
-    to: "your_email@gmail.com", // receive yourself
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER, // Send to self
     subject: `🆕 New Signup: ${user.username}`,
     text: `A new user signed up:\n\nUsername: ${user.username}\nEmail: ${user.email}\nRole: ${user.role}`,
   };
@@ -44,12 +45,12 @@ app.post("/api/signup", (req, res) => {
     return res.status(409).json({ error: "User already exists" });
   }
 
-  users.push(user); // store in memory
-  sendSignupEmail(user); // 🎯 send email on signup
+  users.push(user);
+  sendSignupEmail(user);
   res.status(200).json({ message: "Signup successful", user });
 });
 
-// 🚀 Server start
+// 🚀 Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
