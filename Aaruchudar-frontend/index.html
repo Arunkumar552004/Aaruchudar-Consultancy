@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaruchudar Consultancy</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header glass-header">
+      <div class="logo-section">
+        <img src="images/Screenshot 2025-05-30 135118.png" alt="Logo" class="logo" />
+        <h1 class="logo-main-title">Aaruchudar Consultancy</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="#" onclick="goToCourses()">Courses</a>
+        <a href="contact.html">Contact</a>
+        <div class="profile-dropdown" id="profile-button">
+          <img id="profileImageBtn" class="profile-icon" src="images/default-avatar.png" alt="Profile" />
+          <div class="profile-menu" id="profile-menu">
+            <p id="profile-username">👤 User</p>
+            <a href="view-profile.html">View Profile</a>
+            <a href="#" onclick="logout()">Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="card-container" id="courseContainer"></div>
+
+      <div class="card-container">
+        <div class="course-detail hidden" id="courseDetail">
+          <h1 id="courseTitle" class="Course-Title"></h1>
+          <p id="courseDesc" class="Course-Description"></p>
+          <p id="courseGoal" class="Course-Goal"></p>
+          <h2>Modules:</h2>
+          <div id="moduleList" class="module-section"></div>
+          <button class="back-button" onclick="backToList()">Back to Courses</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer glass-footer">
+      <p>&copy; 2025 Aaruchudar Consultancy. All rights reserved.</p>
+    </footer>
+
+    <script src="Script/Script.js"></script>
+    <script src="Script/auth.js"></script>
+    <script>
+      function logout() {
+        localStorage.removeItem("currentUser");
+        window.location.href = "signin.html";
+      }
+
+      function goToCourses() {
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        if (!currentUser) {
+          alert("Please login first");
+          window.location.href = "signin.html";
+        } else {
+          window.location.href = "index.html";
+        }
+      }
+    </script>
+    <script src="Script/profile-dropdown.js"></script>
+  </body>
+</html>

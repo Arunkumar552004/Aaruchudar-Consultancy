@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signin - Aaruchudar Consultancy</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/auth.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="logo-section">
+          <img
+            src="images/Screenshot 2025-05-30 135118.png"
+            alt="Logo"
+            class="logo"
+          />
+          <div class="logo-title">
+            <h1>Aaruchudar Consultancy</h1>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="form-box">
+          <h2>Sign-in</h2>
+          <div class="input-group">
+            <input type="email" id="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" required />
+            <label>Password</label>
+          </div>
+          <button onclick="signin()">Login</button>
+          <p id="errorMessage" class="error-message"></p>
+          <p>Don't have an account? <a href="signup.html">Sign-up here</a></p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2025 Aaruchudar Consultancy. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="Script/auth.js"></script>
+  </body>
+</html>

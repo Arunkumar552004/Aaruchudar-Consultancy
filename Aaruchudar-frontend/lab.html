@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/profile-dropdown.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/lab.css">
+  </head>
+  <body>
+    <header class="header glass-header" data-aos="fade-down">
+      <div class="logo-section">
+        <img
+          src="images/Screenshot 2025-05-30 135118.png"
+          alt="Logo"
+          class="logo"
+        />
+        <h1 class="logo-main-title">Aaruchudar Consultancy</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="lab.html">HI Lab</a>
+        <a href="blog.html">Blog</a>
+        <a href="#" onclick="goToCourses()">Courses</a>
+        <a href="contact.html">Contact</a>
+        <div class="profile-dropdown" id="profile-button">
+          <img
+            id="profileImageBtn"
+            class="profile-icon"
+            src="images/default-avatar.png"
+            alt="Profile"
+          />
+          <div class="profile-menu" id="profile-menu">
+            <p id="profile-username">👤 User</p>
+            <a href="view-profile.html">View Profile</a>
+            <a href="#" onclick="logout()">Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="features-section">
+      <div class="feature-card" data-aos="fade-up">
+        <div class="feature-text">
+          <h2>Lab1 : CLARITY AS CULTURE</h2>
+          <h3>Why?</h3>
+          <p>
+            Misalignment is not just a communication issue—it's a thinking
+            issue. Clarity is a behavioural norm, not just a tool.
+          </p>
+          <h3>What?</h3>
+          <p>
+            This lab builds a culture where clarity is not accidental but
+            intentional. Teams learn to deconstruct vagueness and make direction
+            a shared language.
+          </p>
+          <h3>How?</h3>
+          <p>
+            <ol>
+              <li> Clarity Cards and “10 Whys” Layering</li>
+              <li>Miscommunication Forensics</li>
+              <li>Emotional Fog Clearing with the Clarity Grid
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up">
+        <div class="feature-text">
+          <h2>LAB 2: DECISION
+            MAKING WITHOUT
+             DRAMA</h2>
+          <h3>Why?</h3>
+          <p>
+            Every delayed decision costs emotion, trust and time. Most workplaces
+            confuse debate with direction.
+          </p>
+          <h3>What?</h3>
+          <p>
+            This lab enables clean, aligned, courageous decision-making using
+            cognitive maps, values grids, and tension-release models.
+          </p>
+          <h3>How?</h3>
+          <p>
+            <ol>
+              <li>  Trade-off Modelling with the Decision Ladder</li>
+              <li> Regret Index Visualisation</li>
+              <li> Ethical Edge Boards for Shared Judgement</li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up">
+        <div class="feature-text">
+          <h2>LAB 3: INNER FOCUS
+            IN NOISY WORLDS</h2>
+          <h3>Why?</h3>
+          <p>
+            Focus is the new currency. But cognitive fatigue is at an all-time high.
+ This lab restores mental depth.
+          </p>
+          <h3>What?</h3>
+          <p>
+            Teaches how to create focused time, manage inner noise, and build
+ psychological bandwidth.
+          </p>
+          <h3>How?</h3>
+          <p>
+            <ol>
+              <li>  Focus Flow Charts</li>
+              <li>Cognitive Energy Design Templates</li>
+              <li>Deep Work Habit Kits
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up">
+        <div class="feature-text">
+          <h2>LAB 4: THE POWER
+            OF LISTENING</h2>
+          <h3>Why?</h3>
+          <p>
+            Listening is a performance multiplier. Without it, feedback fails,
+            collaboration breaks and trust erodes.
+          </p>
+          <h3>What?</h3>
+          <p>
+            The lab offers cognitive training in deep listening, reflective feedback
+ and meaning-making via stories.
+          </p>
+          <h3>How?</h3>
+          <p>
+            <ol>
+              <li> Interruptibility Drills</li>
+              <li> Layered Listening Loops</li>
+              <li> Meaning Capture Templates
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up">
+        <div class="feature-text">
+          <h2>LAB 5: INTELLIGENT
+            CONFLICT AND
+            RECOVERY</h2>
+          <h3>Why?</h3>
+          <p>
+            Avoided conflict accumulates into emotional debt. This lab trains
+ systems in recovery, not repression.
+          </p>
+          <h3>What?</h3>
+          <p>
+            Reframes conflict into cognitive tension. Creates a map for resolution
+            that goes beyond HR compliance.
+          </p>
+          <h3>How?</h3>
+          <p>
+            <ol>
+              <li>  The Conflict Inventory</li>
+              <li>Behavioural Escalation Maps</li>
+              <li> Trust & Recovery Tracker
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up">
+        <div class="feature-text">
+          <h2>LAB 6: SYSTEMIC
+            THINKING</h2>
+          <h3>Why?</h3>
+          <p>
+            Linear thinking creates temporary fixes. Systems thinking creates long
+            term clarity.
+          </p>
+          <h3>What?</h3>
+          <p>
+            Teaches mapping, consequence design, and leverage identification
+ across roles.
+          </p>
+          <h3>How?</h3>
+          <p>
+            <ol>
+              <li> Feedback Loop Boards</li>
+              <li>Stakeholder Webbing</li>
+              <li>Delay Chain Visuals
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up">
+        <div class="feature-text">
+          <h2>LAB 7: VOICE, VALUE
+            AND VULNERABILITY</h2>
+          <h3>Why?</h3>
+          <p>
+            Psychological safety is the foundation of all innovation. But it needs
+            deliberate crafting.
+          </p>
+          <h3>What?</h3>
+          <p>
+            Creates a space for honest voice, self-worth recovery, and healthy
+ dissent through identity-led design.
+          </p>
+          <h3>How?</h3>
+          <p>
+            <ol>
+              <li> Courage Language Framework</li>
+              <li> Inner Voice Reflectors</li>
+              <li>Acceptance Archetype Mapping
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card" data-aos="fade-up">
+        <div class="feature-text">
+          <h2>LAB 8: LEADERSHIP
+            WITHOUT IMITATION</h2>
+          <h3>Why?</h3>
+          <p>
+            Real leadership doesn’t copy—it clarifies. We build leaders who don’t
+            echo others.
+          </p>
+          <h3>What?</h3>
+          <p>
+            Brings out personal leadership architecture rooted in clarity, not
+            charisma.
+          </p>
+          <h3>How?</h3>
+          <p>
+            <ol>
+              <li> Legacy Path Builders</li>
+              <li> Influence Map Sheets</li>
+              <li> Identity-to-Action Frameworks
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Aaruchudar Consultancy. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Script/Script.js"></script>
+    <script src="Script/auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+    <script>
+      AOS.init({ duration: 1200, once: true });
+
+      VanillaTilt.init(document.querySelectorAll(".feature-card"), {
+    max: 20,
+    speed: 500,
+    glare: true,
+    "max-glare": 0.3
+  });
+
+      function goToCourses() {
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        if (!currentUser) {
+          alert("Please login first");
+          window.location.href = "signin.html";
+        } else {
+          window.location.href = "index.html";
+        }
+      }
+
+      function logout() {
+        localStorage.removeItem("currentUser");
+        window.location.href = "signin.html";
+      }
+    </script>
+    <script src="Script/profile-dropdown.js"></script>
+  </body>
+</html>
