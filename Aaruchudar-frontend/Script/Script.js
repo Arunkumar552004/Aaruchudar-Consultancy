@@ -7,31 +7,31 @@ const courses = [
     modules: [
       {
         name: "Wake Up the Mind",
-        desc: "Overview of human cognitive capabilities and ways to enhance them.",
+        desc: "Introduce yourself to human intelligence    and find what’s blocking your clarity, like self-awareness journaling and real-world activities which can reset your thinking",
       },
       {
         name: "Think Without Searching",
-        desc: "Developing self-awareness and adopting a growth-oriented mindset.",
+        desc: "Train your brain to solve problems without depending on google or AI, this automatically helps in natural thought processes through the no-search challenge",
       },
       {
         name: "Attention is Power",
-        desc: "Building effective communication for personal and professional success.",
+        desc: "mostly involves on focusing and also to track and sharpen your attention span includes a silence session, task completion challenge",
       },
       {
         name: "Intuition and Gut Thinking",
-        desc: "Managing emotions and understanding emotional responses in others.",
+        desc: "Learn to trust your internal signals over digital algorithms. developing intuitive thinking through scenario-based exercises",
       },
       {
         name: "Creativity Unplugged",
-        desc: "Core leadership principles for influencing and guiding others.",
+        desc: "“create from nothing” just own thinking and creativity ,to generate ideas without screens and prompts. ",
       },
       {
         name: "Emotional & Mental Clarity",
-        desc: "Enhancing problem-solving through logical and analytical thinking.",
+        desc: "Aligning your emotions and thoughts to achieve the inner calm. this module helps in restoring mental clarity and creativity",
       },
       {
         name: "Build Your Human Intelligence Routine",
-        desc: "Establishing personal goals and tracking progress towards self-growth.",
+        desc: "Combining the routine all together to activate the intelligence daily, and to design a system that supports focus ,intuition and clarity ",
       },
     ],
   },

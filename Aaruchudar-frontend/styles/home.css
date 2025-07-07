@@ -363,6 +363,7 @@ body {
 
   .flip-card {
     height: auto;
+    display: block;
   }
 
   .flip-card-inner,
@@ -370,6 +371,7 @@ body {
   .flip-card-back {
     height: auto;
     padding: 20px;
+    display: block;
   }
 }
 
@@ -495,14 +497,121 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer{
-    margin-top: 450px; /* Adjust based on your header+footer height */
+
+
+@keyframes appear{
+  from{
+    opacity:0;
+     clip-path: inset(100% 100% 0 0);
+  }
+  to{
+    opacity: 1;
+    clip-path: inset(100% 100% 0 0);
   }
 }
 
-@media screen and (max-width: 347px) {
-  .footer{
-    margin-top: 500px; /* Adjust based on your header+footer height */
+.features-section{
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.gaming-services-section {
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.glow-bg {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.15), transparent 60%);
+  transform: translateX(-50%);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00fff7;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 20px #00fff7;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.service-card {
+  background: #121212;
+  border: 2px solid #00fff7;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.service-card:hover {
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #00fff7;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #00fff7;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 8px #00fff7;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #a5faff;
+  margin-bottom: 1.2rem;
+}
+
+.service-card a {
+  display: inline-block;
+  font-weight: 600;
+  color: #0ff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #00fff7;
+  border-radius: 10px;
+  background: rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  transition: all 0.3s ease;
+}
+
+.service-card a:hover {
+  background: #00fff7;
+  color: #000;
+  box-shadow: 0 0 20px #00fff7;
+}
+
+/* Responsive Text Size */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
   }
 }
+
