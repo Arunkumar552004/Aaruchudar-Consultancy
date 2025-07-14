@@ -34,6 +34,7 @@ const courses = [
         desc: "Combining the routine all together to activate the intelligence daily, and to design a system that supports focus ,intuition and clarity ",
       },
     ],
+    image: "images/course-image/c1.jpg"
   },
 
   {
@@ -43,33 +44,34 @@ const courses = [
     modules: [
       {
         name: "Self-Awareness & Values",
-        desc: "Strategies to clear mental clutter and refocus on priorities.",
+        desc: "Self-inquiry to understand who you are and what really matters. identify core values and internal blocks that affect clarity and confidence. this module sets the tone for an authentic reset. ",
       },
       {
         name: "Purpose Discovery",
-        desc: "Simple exercises to boost self-confidence each day.",
+        desc: "Know the deeper ”why” behind your action and aspirations, through guided prompts and purpose-alignment exercise this helps in growth with meaningful direction ",
       },
       {
         name: "Emotional Intelligence at Work",
-        desc: "Practical sessions to refine your speaking and listening skills.",
+        desc: "Navigating emotions, both your own and others  to manage triggers, build empathy and foster emotionally Healthy interactions in professional settings. ",
       },
       {
         name: "Communication Mastery",
-        desc: "Activities to gain clear understanding of goals and purpose.",
+        desc: "This module focus on verbal and non verbal and digital communication styles to help you connect, influence and inspire effectively. ",
       },
       {
         name: "Personal Branding & Presence",
-        desc: "Maintaining emotional stability under stress or pressure.",
+        desc: "Learn how to shape your personal brand , boost confidence, and show up with authenticity-whether in a room, a meeting , or online. ",
       },
       {
         name: "Decision Making & Clarity",
-        desc: "Evaluate your confidence levels and track improvements.",
+        desc: "Develop a clear decision making framework, it helps you trust your judgment, reduce indecision, and act with conviction in both personal and professional contexts. ",
       },
       {
         name: "Action Blueprint & Reflection",
-        desc: "Review of progress and future action planning.",
+        desc: "Bring it together with a reflective review and personalised action plan. solidify your insights into daily habits and create a sustainable blueprint for clarity, confidence, and growth going forward ",
       },
     ],
+    image: "images/course-image/c2.jpg"
   },
 
   {
@@ -79,21 +81,22 @@ const courses = [
     modules: [
       {
         name: "Identify & Career Clarity",
-        desc: "Crafting a clear personal and professional life vision.",
+        desc: "explore beyond your resume. the first week focuses on discovering unique strengths and personality and purpose to align with career path that fits your values and passions. ",
       },
       {
         name: "Values-Driven Communication & Soft Skills",
-        desc: "Defining and living by core ethical and professional values.",
+        desc: "Communication, collaboration and conflict handling   rooted in emotional intelligence. Build confidence to express ideas and navigate real world workspaces",
       },
       {
         name: "Time Management SkillsLinkedIn, Resume, Interviews (Personal Brand)",
-        desc: "Optimizing time for maximum productivity and balance.",
+        desc: "Refine your LinkedIn profile, and make a standout resume and prepare for interviews staying true to your authentic self. this sharpens your professional presence ",
       },
       {
         name: "Future Visioning & Goal Mapping",
-        desc: "Structured approach to make sound professional decisions.",
+        desc: "Building your vision with clarity and confidence. through reflective exercises and strategic planning, sort out the short time and long term goals that align with your personal and professional aspiration ",
       },
     ],
+    image: "images/course-image/c3.jpg"
   },
 
   {
@@ -103,29 +106,30 @@ const courses = [
     modules: [
       {
         name: "Who Am I Now? - Self-reflection & Identity",
-        desc: "Discover activities and career paths that excite you.",
+        desc: "Deeply introspect into your present identity, patterns and career experiences. This module helps you pause, reflect and reconnect with the evolving version of yourself.",
       },
       {
         name: "Values, Energy & Strengths Mapping",
-        desc: "Analyze personal strengths to align with professional roles.",
+        desc: "Sort out, what energizes you and where your strengths lie and which values guide your actions. build a strong foundation for decision-making and direction rooted in authenticity.",
       },
       {
         name: "Skill Inventory & Passion Crossover",
-        desc: "Map current skills with market demands and future trends.",
+        desc: "Take a look at your current skill set and passion and explore where they intersect . discover new possibilities where what you are good at.",
       },
       {
         name: "Future Roles & the “Redesign” Canvas",
-        desc: "Create a step-by-step plan for career shifts or growth.",
+        desc: " Change your future through career experimentation. Use the redesign canvas to explore roles ,industries or opportunities that better reflect your evolving self and purpose. ",
       },
       {
         name: "Storytelling & Personal Narrative Building",
-        desc: "Master interview techniques and present your best self.",
+        desc: "Shape your story with intention, articulating  your journey, transition and growth in a way that’s authentic, inspiring, and aligned with your future goals.",
       },
       {
         name: "Job Strategy / Entrepreneurial Strategy",
-        desc: "Develop a roadmap for sustainable career advancement.",
+        desc: "Convert your inner clarity into external action. Whether its job switch or a startup leap This module guides you through crafting a clear and personalized career or business strategy.",
       },
     ],
+    image: "images/course-image/c4.jpg"
   },
 
   {
@@ -135,29 +139,30 @@ const courses = [
     modules: [
       {
         name: "Authentic Leadership & Emotional Intelligence",
-        desc: "Awaken your intrinsic leadership potential and confidence.",
+        desc: "Start leading from your core with emotional awareness and inner  alignment. This module strengthens your ability to built trust and handle complexity, and stay calm during pressure ",
       },
       {
         name: "Conscious Culture Building",
-        desc: "Identify and build leadership anchored on personal values.",
+        desc: "Learn to shape a team culture intentionally with empathy, transparency and a proper idea. Create a work environment where both people and ideas thrive ",
       },
       {
         name: "Founder Fatigue & Energy Leadership",
-        desc: "Create a powerful leadership vision for long-term impact.",
+        desc: "Running a business can be tiring same as doing our homework after a long day. Thid module teaches how to take care of your energy, avoid burning out from your work and stay strong while leading",
       },
       {
         name: "Vision Alignment & Systems Thinking",
-        desc: "Lead with honesty and transparency in all interactions.",
+        desc: "Check whether your daily work matches your long term dreams. sort out everything clearly and plan better and lead your team in the right direction. ",
       },
       {
         name: "People Strategy (Hiring & Harmony)",
-        desc: "Manage and resolve conflicts constructively.",
+        desc: "Go with a plan and strategy, learn how to hire the right people and keep the team working well together. During times of difficulties handle team issues peacefully and build strong work relationships ",
       },
       {
         name: "Business Values & Ethical Scaling",
-        desc: "Stay calm and rational during challenging leadership situations.",
+        desc: "Keep your values strong , as your business grows learn how to make honest choices and grow your company in a way that feels right to you and which can your improve your ethics and strategy. ",
       },
     ],
+    image: "images/course-image/c5.jpg"
   },
 
   {
@@ -167,25 +172,26 @@ const courses = [
     modules: [
       {
         name: "Designing Human-Centered Classrooms",
-        desc: "Learn innovative and technology-driven teaching approaches.",
+        desc: "Learn how to develop a classroom that care about students emotions needs and growth. This module focuses on making learning personal safe and meaningful for every learner. ",
       },
       {
         name: "Inclusive Teaching Practice",
-        desc: "Techniques to keep students engaged and motivated.",
+        desc: "Understand  how to teach students from different background and  abilities. Learn different ways to make sure every student feels seen,  heard and included in your classroom. ",
       },
       {
         name: "Feedback Culture & Mentoring Students",
-        desc: "Build effective mentor-mentee relationships with students.",
+        desc: "Try to build a classroom where students feel safe to learn and grow through feedback. You will also learn simple ways to mentor guide and support students in their journey.",
       },
       {
         name: "Future of Education & Institutional Mindsets",
-        desc: "Support students emotionally while maintaining professionalism.",
+        desc: "Explore and identify what an education will look like in the future and what changes are needed in school systems. shift your mindset to adapt and lead in a changing world ",
       },
       {
         name: "Innovation & Critical Thinking in Class",
-        desc: "Implement game elements to make learning interactive and fun.",
+        desc: "Bring creativity and fresh thinking into your teaching and mentoring. Use simple techniques to help students ask questions solve problems and think for themselves ",
       },
     ],
+    image: "images/course-image/c6.jpg"
   },
 
   {
@@ -195,29 +201,30 @@ const courses = [
     modules: [
       {
         name: "Innovation Mindset & Problem Framing",
-        desc: "Apply proven frameworks to foster institutional innovation.",
+        desc: "Learn how to think differently and see problems as opportunities. This module trains you to identify real challenges and frame them in a way that leads to creative solutions. ",
       },
       {
         name: "Ideation Labs & Design Thinking",
-        desc: "Train leaders to champion change within the institution.",
+        desc: "Explore fun and structured ways to generate ideas, pave way to new thinking. Use design thinking tools to guide students and teams in finding smart, practical and user focused solutions",
       },
       {
         name: "Student Startup Journey Design",
-        desc: "Promote research partnerships to drive knowledge sharing.",
+        desc: "Learn how to support students in becoming young entrepreneurs. Design step by step journeys that helps them turn ideas into real startup projects with clarity and confidence.",
       },
       {
         name: "Hackathon Planning & Execution",
-        desc: "Develop modern, flexible, and outcome-driven curricula.",
+        desc: "Master the process of organizing innovation challenges and hackathons. Get tools to plan manage and run events that energize students and solve real world problems. ",
       },
       {
         name: "Partnering with Ecosystems (Govt, Incubators)",
-        desc: "Support faculty in adopting innovative teaching methods.",
+        desc: "Connect with government bodies, incubators and industries experts. This module helps you build strong partnership that bring real opportunities and support to your campus",
       },
       {
         name: "Sustainable Development",
-        desc: "Align institutional growth with long-term sustainability goals.",
+        desc: "Make sure innovation efforts last. Learn how to measure impact track success and keep your innovation programs growing over time. ",
       },
     ],
+    image: "images/course-image/c7.jpg"
   },
 
   {
@@ -227,19 +234,19 @@ const courses = [
     modules: [
       {
         name: "Sprint Planning",
-        desc: "Design and schedule focused sprint sessions for teams.",
+        desc: "Reflect and step back on your journey as an educator. This session helps you reconnect with your purpose, teaching values and leadership role in the classroom and beyond. ",
       },
       {
         name: "Team Collaboration Exercises",
-        desc: "Facilitate team-building exercises to improve collaboration.",
+        desc: "Create a shared vision for your college. Work together as a team to shape a future-ready value based roadmap for your institution next step. ",
       },
       {
         name: "Human Intelligence at Work",
-        desc: "Visually organize ideas and action plans during the sprint.",
+        desc: "Understand how emotional clarity focus and original thinking can boost your work performance. Learn to reduce digital dependency and activate your natural intelligence in real-time tasks. ",
       },
       {
         name: "Clarity Camp for Entrepreneurs",
-        desc: "Short bursts of intense focus to achieve specific goals.",
+        desc: "Take a break maybe a pause from the hustle to gain clear thinking on your next business move. This lab helps entrepreneurs reflect reset goals and reconnect with their business purpose and self. ",
       },
       {
         name: "Reflective Leadership for Educators",
@@ -254,6 +261,7 @@ const courses = [
         desc: "Evaluate sprint outcomes and plan next steps.",
       },
     ],
+    image: "images/course-image/c8.jpg"
   },
 ];
 
@@ -269,7 +277,7 @@ courses.forEach((course, index) => {
   card.className = "card";
 
   const image = document.createElement("img");
-  image.src = "images/image1.jpg";
+  image.src = course.image;
   image.onerror = () => {
     image.src = "https://via.placeholder.com/250x150?text=No+Image";
   };
@@ -277,18 +285,11 @@ courses.forEach((course, index) => {
 
   const cardBody = document.createElement("div");
   cardBody.className = "card-body";
-
-  let myCourses = JSON.parse(localStorage.getItem("myLearning")) || [];
-  const isEnrolled = myCourses.some((c) => c.name === course.name);
-  const enrollButtonText = isEnrolled ? "Enrolled" : "Enroll Course";
-  const enrollButtonDisabled = isEnrolled ? "disabled" : "";
-
   cardBody.innerHTML = `
     <div class="card-title">Course</div>
     <div class="card-text">${course.name}</div>
     <div class="button-group">
       <button class="view-course-btn" onclick="showCourse(${index})">View Course</button>
-      <!--<button class="enroll-btn" onclick="enrollCourse(this)" ${enrollButtonDisabled}>${enrollButtonText}</button>-->
     </div>`;
 
   card.appendChild(cardBody);
@@ -302,42 +303,22 @@ function showCourse(index) {
   courseGoal.textContent = course.goal || "";
   moduleList.innerHTML = "";
 
-  course.modules.forEach((module) => {
-    const moduleCard = document.createElement("div");
-    moduleCard.className = "module-card";
-    moduleCard.innerHTML = `<h3>${module.name}</h3><p>${module.desc}</p>`;
-    moduleList.appendChild(moduleCard);
-  });
+  if (Array.isArray(course.modules)) {
+    course.modules.forEach((mod) => {
+      const moduleCard = document.createElement("div");
+      moduleCard.className = "module-card";
+      moduleCard.innerHTML = `<h3>${mod.name}</h3><p>${mod.desc}</p>`;
+      moduleList.appendChild(moduleCard);
+    });
+  }
 
   courseContainer.classList.add("hidden");
   courseDetail.classList.remove("hidden");
 }
 
-function backToList() {
+function backToCourseList() {
   courseDetail.classList.add("hidden");
   courseContainer.classList.remove("hidden");
-}
-
-function enrollCourse(button) {
-  const card = button.closest(".card");
-  const courseName = card.querySelector(".card-text").innerText;
-  const courseImage = card.querySelector("img").src;
-
-  let myCourses = JSON.parse(localStorage.getItem("myLearning")) || [];
-  const exists = myCourses.some((course) => course.name === courseName);
-
-  if (!exists) {
-    const enrolledCourse = {
-      name: courseName,
-      image: courseImage,
-      enrolledOn: new Date().toLocaleString(),
-    };
-    myCourses.push(enrolledCourse);
-    localStorage.setItem("myLearning", JSON.stringify(myCourses));
-  }
-
-  button.innerText = "Enrolled";
-  button.disabled = true;
 }
 
 window.addEventListener("DOMContentLoaded", () => {

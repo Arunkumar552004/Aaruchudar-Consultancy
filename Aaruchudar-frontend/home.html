@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aaruchudar Consultancy</title>
     <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/profile-dropdown.css" />
+    <!--<link rel="stylesheet" href="styles/profile-dropdown.css" />-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -31,12 +31,12 @@
         <h1 class="logo-main-title">Aaruchudar Consultancy</h1>
       </div>
       <nav class="nav-links">
-        <a href="about.html">About</a>
         <a href="lab.html">HI Lab</a>
+        <a href="index.html" >Courses</a>
         <a href="blog.html">Blog</a>
-        <a href="#" onclick="goToCourses()">Courses</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <div class="profile-dropdown" id="profile-button">
+        <!--<div class="profile-dropdown" id="profile-button">
           <img
             id="profileImageBtn"
             class="profile-icon"
@@ -48,7 +48,7 @@
             <a href="view-profile.html">View Profile</a>
             <a href="#" onclick="logout()">Logout</a>
           </div>
-        </div>
+        </div>-->
       </nav>
     </header>
 
@@ -193,49 +193,13 @@
      
           </section>
       
-      <section class="gaming-services-section">
-  <div class="glow-bg"></div>
-  <h2 class="section-title">Our Elite Services</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <img src="images/our service-1.jpeg" alt="Service 1">
-      <h3>For Individuals</h3>
-      <p>Career Transformation - Beyond Resumes</p>
-      <a href="#">Engage</a>
+    <section class="gaming-services-section">
+        <div class="glow-bg"></div>
+        <h2 class="section-title">Our Elite Services</h2>
+        <div class="services-grid"></div>
+      </section>
     </div>
-    <div class="service-card">
-      <img src="images/our service-2.jpeg" alt="Service 2">
-      <h3>For Students</h3>
-      <p>Untapping real career potentials</p>
-      <a href="#">Join Now</a>
-    </div>
-    <div class="service-card">
-      <img src="images/our service-3.jpeg" alt="Service 3">
-      <h3>For Startups</h3>
-      <p>A to Z consulting & Blueprints</p>
-      <a href="#">Upgrade</a>
-    </div>
-     <div class="service-card">
-      <img src="images/our service-4.jpeg" alt="Service 3">
-      <h3>For Corporates</h3>
-      <p>Culture and Human first Algorithm</p>
-      <a href="#">Upgrade</a>
-    </div>
-     <div class="service-card">
-      <img src="images/our service-5.jpeg" alt="Service 3">
-      <h3>For Colleges & Universities</h3>
-      <p>Complete Institutional consulting</p>
-      <a href="#">Upgrade</a>
-    </div>
-     <div class="service-card">
-      <img src="images/our service-6.jpeg" alt="Service 3">
-      <h3>For Schools</h3>
-      <p>Complete School Upgrade Consulting</p>
-      <a href="#">Upgrade</a>
-    </div>
-  </div>
-</section>
-  </div>
+
 
     <!-- ✅ Sticky Footer -->
     <footer class="footer">
@@ -243,25 +207,27 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+    
+
+  <script>
       AOS.init({ duration: 1200, once: true });
 
-      function goToCourses() {
-        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-        if (!currentUser) {
-          alert("Please login first");
-          window.location.href = "signin.html";
-        } else {
-          window.location.href = "index.html";
-        }
-      }
+      // function goToCourses() {
+      //   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+      //   if (!currentUser) {
+      //     alert("Please login first");
+      //     window.location.href = "signin.html";
+      //   } else {
+      //     window.location.href = "index.html";
+      //   }
+      // }
 
-      function logout() {
-        localStorage.removeItem("currentUser");
-        window.location.href = "signin.html";
-      }
+      // function logout() {
+      //   localStorage.removeItem("currentUser");
+      //   window.location.href = "signin.html";
+      // }
     </script>
-    <script src="Script/profile-dropdown.js"></script>
+   <!-- <script src="Script/profile-dropdown.js"></script>-->
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -302,7 +268,7 @@
       opacity: 0,
       scale: 1.2,
       rotate: 5,
-      delay: i * 0.2,
+      delay: i * 0.1,
       duration: 1,
       ease: "power3.out",
       scrollTrigger: {
@@ -318,7 +284,7 @@
       opacity: 0,
       scale: 1.2,
       rotate: 9,
-      delay: i * 0.2,
+      delay: i * 0.1,
       duration: 1,
       ease: "power4.out",
       scrollTrigger: {
@@ -386,7 +352,7 @@
     });
   });
 </script>
-
+<script src="Script/service.js"></script>
 
   </body>
 </html>

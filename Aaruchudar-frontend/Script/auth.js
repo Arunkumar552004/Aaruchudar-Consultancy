@@ -116,19 +116,19 @@ function editProfile() {
 //
 // ✅ MAIN LOGIN PROTECTION LOGIC
 //
-(function () {
-  const publicPages = [
-    "home.html",
-    "about.html",
-    "contact.html",
-    "signup.html",
-    "signin.html",
-  ];
+// (function () {
+//   const publicPages = [
+//     "home.html",
+//     "about.html",
+//     "contact.html",
+//     "signup.html",
+//     "signin.html",
+//   ];
 
-  const currentPage = window.location.pathname.split("/").pop();
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+//   const currentPage = window.location.pathname.split("/").pop();
+//   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-  if (!publicPages.includes(currentPage) && !currentUser) {
-    window.location.href = "signin.html";
-  }
-})();
+//   if (!publicPages.includes(currentPage) && !currentUser) {
+//     window.location.href = "signin.html";
+//   }
+// })();

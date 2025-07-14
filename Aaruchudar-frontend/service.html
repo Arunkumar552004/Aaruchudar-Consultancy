@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Service Details</title>
+  <link rel="stylesheet" href="styles/home.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #03e9f4;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 0.5rem;
+    }
+    p{
+      font-size: 2rem;
+    }
+
+    .section-block {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      font-size: 2rem;
+    }
+
+    .impact-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 8px;
+      backdrop-filter: blur(4px);
+      font-size: 2rem;
+    }
+
+    .service-image-container {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .service-image-container img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    }
+
+    .back-btn-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background-color: #00bcd4;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #01b1f7;
+    }
+
+    footer.footer {
+      text-align: center;
+      padding: 1rem;
+      color: #ccc;
+      background: #0f2027;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header glass-header" data-aos="fade-down">
+      <div class="logo-section">
+        <img src="images/Screenshot 2025-05-30 135118.png" alt="Logo" class="logo" />
+        <h1 class="logo-main-title">Aaruchudar Consultancy</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="lab.html">HI Lab</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+       <!-- <div class="profile-dropdown" id="profile-button">
+          <img id="profileImageBtn" class="profile-icon" src="images/default-avatar.png" alt="Profile" />
+          <div class="profile-menu" id="profile-menu">
+            <p id="profile-username">👤 User</p>
+            <a href="view-profile.html">View Profile</a>
+            <a href="#" onclick="logout()">Logout</a>
+          </div>
+        </div>-->
+      </nav>
+    </header>
+
+  <div class="main-container">
+    <div class="service-image-container" data-aos="zoom-in">
+      <img id="service-image" src="" alt="Service" />
+    </div>
+
+    <div class="section-block" data-aos="fade-up">
+      <h1>Why?</h1>
+      <p id="service-des"></p>
+    </div>
+
+    <div class="section-block" data-aos="fade-up" data-aos-delay="100">
+      <h1>What?</h1>
+      <p id="service-detail-text"></p>
+    </div>
+
+    <div class="section-block" data-aos="fade-up" data-aos-delay="200">
+      <h1>How?</h1>
+      <div class="impact-grid" id="impact-items"></div>
+    </div>
+
+    <div class="back-btn-container" data-aos="fade-up" data-aos-delay="300">
+      <a href="home.html" class="back-btn">← Back to Services</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <h4>© 2025 Aaruchudar Consultancy. All rights reserved.</h4>
+  </footer>
+
+  <script src="Script/service.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    function getServiceById(id) {
+      return services.find(service => service.id === parseInt(id));
+    }
+
+    function renderServiceDetails() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+      const service = getServiceById(id);
+
+      if (!service) {
+        document.querySelector(".main-container").innerHTML = "<p>Service not found</p>";
+        return;
+      }
+
+      document.getElementById("service-image").src = service.image;
+      document.getElementById("service-image").alt = service.title;
+      document.getElementById("service-detail-text").textContent = service.detail;
+      document.getElementById("service-des").textContent = service.des;
+
+      const impactContainer = document.getElementById("impact-items");
+      const lis = service.lis[0];
+      for (let i = 1; i <= 3; i++) {
+        const item = document.createElement("div");
+        item.className = "impact-item";
+        item.setAttribute("data-aos", "fade-up");
+        item.setAttribute("data-aos-delay", i * 100);
+        item.textContent = lis[i];
+        impactContainer.appendChild(item);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", renderServiceDetails);
+  </script>
+</body>
+</html>

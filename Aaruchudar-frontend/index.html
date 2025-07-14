@@ -6,26 +6,29 @@
     <title>Aaruchudar Consultancy</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header class="header glass-header">
+    <header class="header glass-header" data-aos="fade-down">
       <div class="logo-section">
         <img src="images/Screenshot 2025-05-30 135118.png" alt="Logo" class="logo" />
         <h1 class="logo-main-title">Aaruchudar Consultancy</h1>
       </div>
       <nav class="nav-links">
         <a href="home.html">Home</a>
-        <a href="#" onclick="goToCourses()">Courses</a>
+        <a href="lab.html">HI Lab</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <div class="profile-dropdown" id="profile-button">
+       <!-- <div class="profile-dropdown" id="profile-button">
           <img id="profileImageBtn" class="profile-icon" src="images/default-avatar.png" alt="Profile" />
           <div class="profile-menu" id="profile-menu">
             <p id="profile-username">👤 User</p>
             <a href="view-profile.html">View Profile</a>
             <a href="#" onclick="logout()">Logout</a>
           </div>
-        </div>
+        </div>-->
       </nav>
     </header>
 
@@ -39,7 +42,7 @@
           <p id="courseGoal" class="Course-Goal"></p>
           <h2>Modules:</h2>
           <div id="moduleList" class="module-section"></div>
-          <button class="back-button" onclick="backToList()">Back to Courses</button>
+          <button class="back-button" onclick="backToCourseList()">Back to Courses</button>
         </div>
       </div>
     </main>
@@ -49,23 +52,39 @@
     </footer>
 
     <script src="Script/Script.js"></script>
-    <script src="Script/auth.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script>
+    <!--<script src="Script/auth.js"></script>-->
     <script>
-      function logout() {
-        localStorage.removeItem("currentUser");
-        window.location.href = "signin.html";
-      }
+      AOS.init({ duration: 1200, once: true });
 
-      function goToCourses() {
-        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-        if (!currentUser) {
-          alert("Please login first");
-          window.location.href = "signin.html";
-        } else {
-          window.location.href = "index.html";
-        }
-      }
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 20,
+        speed: 500,
+        glare: true,
+        "max-glare": 0.1
+      });
+
+      // function logout() {
+      //   localStorage.removeItem("currentUser");
+      //   window.location.href = "signin.html";
+      // }
+
+      // function goToCourses() {
+      //   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+      //   if (!currentUser) {
+      //     alert("Please login first");
+      //     window.location.href = "signin.html";
+      //   } else {
+      //     window.location.href = "index.html";
+      //   }
+      // }
     </script>
-    <script src="Script/profile-dropdown.js"></script>
+    <!--<script src="Script/profile-dropdown.js"></script>-->
+
+    
   </body>
 </html>
